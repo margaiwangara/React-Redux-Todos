@@ -13,7 +13,6 @@ Understanding redux basically involves the codes below:</p>
     const initialState = {
         todos:[]
     };
-
     //reducer function
     function rootReducer(state=initialState, action) //if no initial state is declared
     {
