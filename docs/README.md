@@ -15,13 +15,12 @@ Understanding redux basically involves the codes below:</p>
     };
 
     //reducer function
-    function rootReducer(state=initialState, action) //if no initial state is declared, we have to write conditionals
+    function rootReducer(state=initialState, action) //if no initial state is declared
     {
         //if no state is defined
         if(state === undefined){
             //do stuff here
         }
-
         //but here we insert our initial state in the parameters
         //then switch through the action to get the action, code for actions later on
         switch(action.type){
