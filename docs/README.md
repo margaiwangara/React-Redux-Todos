@@ -34,18 +34,16 @@ Understanding redux basically involves the codes below:</p>
                 //if no action.type value is passed return initial state
                 return state;
         }
-
-    }
+    } 
     //then create a store
     const store = createStore(rootReducer)//pass in a function here, a reducer. To use reduxdevtools                                           //pass second parameter, found in docs
-
     //actions basically get the type of user_defined actions, something the user wants todo and gives it //an identifying name, eg. ADD_TODOS, REMOVE_TODOS, UPDATE_TODOS, EAT_CHICKEN etc...
     //defined as follows
     store.dispatch({type: "ADD_TODOS", task:"Go To Market"}); //after the type, the user can add                                                                  //variables based on form data or any data
-
+    ////
     //to view the final state call getState();
     store.getState();//this displays the value of the state
-
+    ////
     //using this same concept, we can apply it to react
 
 </code>
